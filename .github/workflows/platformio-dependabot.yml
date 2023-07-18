@@ -10,6 +10,10 @@ jobs:
   dependabot:
     runs-on: ubuntu-latest
     name: run PlatformIO Dependabot
+    defaults:
+      run:
+        working-directory: ./Software
+      
     steps:
       - name: Checkout
         uses: actions/checkout@v3
